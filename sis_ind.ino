@@ -180,7 +180,7 @@ void setup() {
 void loop() {
   MQTT_Connect();
 
-  //----------------------------------------Recupera informação do botão Liga/Desliga do Adafruit IO (Server) para controlar o relay.
+  // Recupera informação do botão Liga/Desliga do Adafruit IO (Server) para controlar o relay.
   Adafruit_MQTT_Subscribe *subscription;
   
   while ((subscription = mqtt.readSubscription(5000))) {
